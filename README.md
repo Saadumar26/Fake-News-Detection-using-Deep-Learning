@@ -2,11 +2,10 @@
 
 ## 📖 Introduction
 
-In today's digital landscape, the spread of misinformation—commonly referred to as **fake news**—has become a major societal issue. The goal of this project is to build an intelligent system that can automatically detect and classify news articles as **fake** or **true**, using a combination of **Natural Language Processing (NLP)** and **Deep Learning** techniques.
+In today's digital landscape, the spread of misinformation commonly referred to as **fake news** has become a major societal issue. The goal of this project is to build an intelligent system that can automatically detect and classify news articles as **fake** or **true**, using a combination of **Natural Language Processing (NLP)** and **Deep Learning** techniques.
 
 This project not only explores classical machine learning algorithms but also fine-tunes a modern transformer model (**DistilBERT**) to achieve high performance. The system is deployed via a **Streamlit** web application, allowing users to test news headlines or content in real time.
 
----
 
 ## 🎯 Objectives
 
@@ -16,7 +15,6 @@ This project not only explores classical machine learning algorithms but also fi
 - Visualize important text patterns and model performance.
 - Deploy the system for real-time use through an interactive web interface.
 
----
 
 ## 🧰 Tools, Technologies, and Libraries
 
@@ -30,7 +28,6 @@ This project not only explores classical machine learning algorithms but also fi
 | **Visualization**      | Matplotlib, Seaborn, WordCloud                                          |
 | **Deployment**         | Streamlit                                                               |
 
----
 
 ## 🔄 Pipelines Overview
 
@@ -92,7 +89,6 @@ Prediction: Fake or True
 7. **Deployment**:
    - Developed an interactive **Streamlit app** for user input and real-time predictions
 
----
 
 ## 📈 Results
 
@@ -100,7 +96,6 @@ Prediction: Fake or True
 - **DistilBERT Accuracy**: 99.8%
 - The fine-tuned DistilBERT model outperformed traditional models in both precision and recall, making it the primary model for deployment.
 
----
 
 ## 🔮 Future Enhancements
 
@@ -110,11 +105,9 @@ Prediction: Fake or True
 - Add **explainability modules** (e.g., LIME/SHAP) for transparency.
 - Deploy on **cloud platforms** for global accessibility.
 
----
 
 > 💡 This project combines the power of traditional ML and modern transformer-based models to tackle one of the most pressing issues in digital communication: detecting fake news with high confidence and clarity.
 
----
 
 **Developed by:** *M. Saad Umar*  
 *Department of Information Technology, Bahauddin Zakariya University, Multan*
