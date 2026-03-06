@@ -1,6 +1,6 @@
 # 📰 Fake News Detection using Deep Learning
 
-A machine learning project that detects whether a news article is **real or fake** — using a combination of classical ML and modern deep learning approaches. The project progressively builds from a simple TF-IDF + Logistic Regression baseline all the way up to a fine-tuned DistilBERT transformer model.
+A machine learning project that detects whether a news article is **real or fake** using a combination of classical ML and modern deep learning approaches. The project progressively builds from a simple TF-IDF + Logistic Regression baseline all the way up to a fine-tuned DistilBERT transformer model.
 
 ---
 
@@ -387,7 +387,9 @@ There's definitely room to take this project further. Here are some directions w
 ## 👤 Author
 
 **Muhammad Saad Umar**
+
 BS Information Technology
+
 Bahauddin Zakariya University, Multan
 
-This project was developed as part of a Final Year Project (FYP) that focuses on NLP and deep learning for misinformation detection.
+This project was developed as part of a Final Year Project (FYP) focusing on NLP and deep learning for misinformation detection.
