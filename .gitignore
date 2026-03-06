@@ -1,0 +1,14 @@
+
+# Large data files
+WELFake_Dataset.csv
+cleaned_text_with_token_reduction.csv
+cleaned_data.csv
+tfidf_matrix.pkl
+Fake_cleaned.csv
+
+# Colab checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
