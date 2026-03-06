@@ -12,3 +12,4 @@ Fake_cleaned.csv
 # Python cache
 __pycache__/
 *.pyc
+*.safetensors
