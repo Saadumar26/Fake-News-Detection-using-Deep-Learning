@@ -51,20 +51,6 @@ p, span, div, label {
     margin-bottom: 2.5rem;
 }
 
-.model-badge {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    border: 1px solid #ff6b35;
-    border-radius: 6px;
-    padding: 10px 16px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.75rem;
-    color: #ff6b35 !important;
-    -webkit-text-fill-color: #ff6b35 !important;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    letter-spacing: 1px;
-}
-
 .stTextArea label {
     color: #e8e8e8 !important;
     font-family: 'Syne', sans-serif !important;
@@ -222,8 +208,8 @@ hr {
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.7rem;
-    color: #555 !important;
-    -webkit-text-fill-color: #555 !important;
+    color: #888888 !important;
+    -webkit-text-fill-color: #888888 !important;
 }
 
 #MainMenu {visibility: hidden;}
@@ -272,18 +258,12 @@ def predict(text, tokenizer, model):
 
 # ─── UI ───────────────────────────────────────────────────────
 st.markdown('<div class="main-title">FAKE NEWS DETECTOR</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">Powered by Fine-Tuned DistilBERT</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-title">Powered by Deep Learning</div>', unsafe_allow_html=True)
 
-st.markdown("""
-<div class="model-badge">
-    🧠 MODEL: DistilBERT-base-uncased &nbsp;|&nbsp;
-    ACCURACY: 99.94% &nbsp;|&nbsp;
-    PARAMETERS: 66M
-</div>
-""", unsafe_allow_html=True)
-
+# Load model
 tokenizer, model = load_model()
 
+# Input
 news_text = st.text_area(
     "📰 Paste a news article or headline below:",
     height=200,
@@ -292,7 +272,7 @@ news_text = st.text_area(
 
 word_count = len(news_text.split()) if news_text.strip() else 0
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 with col1:
     st.markdown(f"""
     <div class="stat-box">
@@ -307,17 +287,10 @@ with col2:
         <div class="stat-label">Characters</div>
     </div>
     """, unsafe_allow_html=True)
-with col3:
-    st.markdown(f"""
-    <div class="stat-box">
-        <div class="stat-value">256</div>
-        <div class="stat-label">Max Tokens</div>
-    </div>
-    """, unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-if st.button("🔍 ANALYZE NEWS"):
+if st.button("ANALYZE NEWS"):
     if not news_text.strip():
         st.warning("⚠️ Please enter some text before analyzing.")
     elif tokenizer is None or model is None:
@@ -358,14 +331,13 @@ if st.button("🔍 ANALYZE NEWS"):
 
         st.markdown("""
         <div class="warn-box">
-            ⚠️ DISCLAIMER: This model achieves 99.94% accuracy but is not infallible.
-            Always verify critical information through multiple reliable sources.
+            ⚠️ DISCLAIMER: This is an AI-based tool. Always verify news through trusted sources before drawing conclusions.
         </div>
         """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("""
 <div class="footer-text">
-    Fine-Tuned DistilBERT &nbsp;·&nbsp; Final Year Project &nbsp;·&nbsp; Trained on 33,700 samples
+    Fake News Detector &nbsp;·&nbsp; Final Year Project &nbsp;·&nbsp; Deep Learning
 </div>
 """, unsafe_allow_html=True)
