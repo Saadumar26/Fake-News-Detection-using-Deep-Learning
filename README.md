@@ -153,8 +153,7 @@ The fine-tuned model is deployed as an interactive Streamlit app. Users can past
 **Features:**
 - Real-time FAKE / TRUE classification
 - Confidence score with visual progress bar
-- Detailed probability breakdown
-- About & Future Improvements pages
+- Word and character count display
 
 🔗 **Try it live:** [fake-news-detection-using-deep-learning-46mquyuftsbubrxddakfw8.streamlit.app](https://fake-news-detection-using-deep-learning-46mquyuftsbubrxddakfw8.streamlit.app/)
 
