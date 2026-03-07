@@ -211,6 +211,19 @@ streamlit run app.py
 ```
 
 ---
+## ⚠️ Limitations
+
+Although the model performs extremely well on the available dataset, several limitations remain:
+
+- The dataset is sourced from limited news domains
+- Performance may decrease on unseen or out-of-domain news sources
+- The system currently supports English text only
+- Very short headlines may be harder to classify accurately
+- Real-world misinformation can be more subtle than dataset examples
+
+Future work could address these limitations by utilising more diverse datasets, supporting multilingual models, and conducting real-world news stream testing.
+
+---
 
 ## 🔮 Future Improvements
 
